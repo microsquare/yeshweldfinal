@@ -4,7 +4,8 @@
 <head>
   <title>Yesh Weld - Home</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -16,6 +17,13 @@
   <link rel="stylesheet" href="css/jquery.timepicker.css">
   <link rel="stylesheet" href="css/flaticon.css">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  </style>
 </head>
 
 <body>
@@ -30,7 +38,7 @@
 
       <div class="d-flex align-items-center">
         <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
-        <a class="navbar-brand" href="index.html" style="color: black">Yesh Weld Technology</a>
+        <a class="navbar-brand" href="index.html" style="color: black; font-size:2vw;">Yesh Weld Technology</a>
 
       </div>
       <div class="">
@@ -49,53 +57,40 @@
     </div>
   </nav>
 
-  <div class="hero-wrap">
-    <div class="home-slider owl-carousel">
-      <div class="slider-item" style="background-image:url(images/bg_1.png);">
-        <div class="overlay"></div>
-        <div class="container">
-          <div class="row no-gutters slider-text align-items-center justify-content-start">
-            <div class="col-md-6 ftco-animate">
-              <div class="text w-100">
+  <div id="demo" class="carousel slide" data-ride="carousel">
 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="slider-item" style="background-image:url(images/bg_2.jpg);">
-        <div class="overlay"></div>
-        <div class="container">
-          <div class="row no-gutters slider-text align-items-center justify-content-start">
-            <div class="col-md-6 ftco-animate">
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+      <li data-target="#demo" data-slide-to="3"></li>
+  </ul>
 
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="slider-item" style="background-image:url(images/bg_3.jpg);">
-        <div class="overlay"></div>
-        <div class="container">
-          <div class="row no-gutters slider-text align-items-center justify-content-start">
-            <div class="col-md-6 ftco-animate">
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="slider-item" style="background-image:url(images/bg_4.jpg);">
-        <div class="overlay"></div>
-        <div class="container">
-          <div class="row no-gutters slider-text align-items-center justify-content-start">
-            <div class="col-md-6 ftco-animate">
-
-            </div>
-          </div>
-        </div>
-      </div>
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/bg_1.png" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="images/bg_2.jpg" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="images/bg_3.jpg" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="images/bg_4.jpg"  width="1100" height="500">
     </div>
   </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
 
   <section class="ftco-section">
     <div class="container">
@@ -424,6 +419,10 @@
   <script src="js/main.js" type="357ad0d05ef10c78e04a1552-text/javascript"></script>
 
 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="357ad0d05ef10c78e04a1552-|49" defer=""></script>
 </body>
