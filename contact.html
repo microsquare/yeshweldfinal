@@ -16,7 +16,10 @@
   <link rel="stylesheet" href="css/flaticon.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-
+<style>.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}</style>
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
@@ -48,17 +51,21 @@
       </div>
     </nav>
 
-  <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_3.jpg');" data-stellar-background-ratio="0.5">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row no-gutters slider-text align-items-end">
-        <div class="col-md-9 ftco-animate pb-5">
-          <p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>Contact us <i class="fa fa-chevron-right"></i></span></p>
-          <h1 class="mb-0 bread">Contact us</h1>
-        </div>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+
+        <li data-target="#demo" data-slide-to="3" class ="active"></li>
+    </ul>
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/bg_3.jpg" width="1100" height="500">
       </div>
+      
     </div>
-  </section>
   <section class="ftco-section bg-light">
     <div class="container">
       <div class="row justify-content-center">
@@ -232,7 +239,7 @@
 
   <script src="js/main.js" type="18c6bfc06f8509407b798ec7-text/javascript"></script>
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="18c6bfc06f8509407b798ec7-|49" defer=""></script>
 </body>
